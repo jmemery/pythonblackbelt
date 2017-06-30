@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>User</title>
+  </head>
+  <body>
+    <h1>These are your likes!</h1>
+    {% for quote in quotes %}
+    <p>
+      {{ quote.quotedby }} <a href='/delete'>Delete!</a>
+    </p>
+    <br />
+    <p>
+      {{ quote.message }}
+    </p>
+    {% endfor %}
+  </body>
+</html>
